@@ -1,0 +1,47 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    display: flex;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(to bottom, #A7A7A7 0%, #E4E4E4 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    justify-content:center ;
+    align-items: center;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    text-transform:uppercase;
+    width:100%;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+
+.app {
+    display: flex;
+    width: 40rem;
+    background-color: #3d3b3b;
+    height: 90vh;
+    overflow-y: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: .5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
